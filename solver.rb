@@ -9,4 +9,8 @@ class Solver
     end
     sum
   end
+
+  def reverse(word)
+    word.chars.reverse.join
+  end
 end
