@@ -15,4 +15,19 @@ describe Solver do
       expect(factorial_zero).to eq(1)
     end
   end
+
+  context 'Test the reverse String method in Solver Class' do
+    it 'should return the reverse of the word' do
+      reversed = solve.reverse('Eid')
+      expect(reversed).to eq('diE')
+    end
+    it 'should return the reverse of the word' do
+      reversed = solve.reverse('Patrick')
+      expect(reversed).to eq('kcirtaP')
+    end
+    it 'should return the reverse of the word' do
+      reversed = solve.reverse('Microverse')
+      expect(reversed).to eq('esrevorciM')
+    end
+  end
 end
